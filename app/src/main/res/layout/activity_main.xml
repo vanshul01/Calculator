@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Enter two numbers!"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:textColor="@color/colorAccent"/>
+       <EditText
+           android:id="@+id/num1"
+           android:inputType="numberDecimal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:hint="Enter number1"
+           android:layout_margin="15dp"
+           android:padding="15dp"
+           android:textColor="@color/colorAccent"
+           android:textColorHint="@color/colorAccent"
+           />
+    <EditText
+        android:id="@+id/num2"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter number2"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/colorAccent"
+        >
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:padding="7dp"
+        android:layout_margin="7dp"
+        />
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_margin="7dp"
+        android:padding="7dp"
+        />
+    <Button
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:layout_margin="7dp"
+        android:padding="7dp"
+        />
+
+    <Button
+        android:id="@+id/pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:layout_margin="7dp"
+        android:padding="7dp"
+        />
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:hint="Answer"
+        android:textSize="25dp"
+        android:padding="15dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+
+
+        />
+
+</LinearLayout>

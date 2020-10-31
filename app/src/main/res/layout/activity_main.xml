@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Enter two numbers!"
+        android:text="calculate your money!"
         android:textSize="25dp"
         android:layout_margin="20dp"
         android:padding="15dp"
@@ -24,7 +24,7 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_gravity="center"
-           android:hint="Enter number1"
+           android:hint="Enter number1(per hour money)"
            android:layout_margin="15dp"
            android:padding="15dp"
            android:textColor="@color/colorAccent"
@@ -36,7 +36,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Enter number2"
+        android:hint="Enter number2(work hour)"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        />
+    <EditText
+        android:id="@+id/num3"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter number3(working days )"
         android:layout_margin="15dp"
         android:padding="15dp"
         android:textColor="@color/colorAccent"
@@ -74,6 +86,15 @@
         android:layout_margin="7dp"
         android:padding="7dp"
         />
+    <Button
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "~"
+        android:layout_margin="7dp"
+        android:padding="7dp"
+        />
+
 
     <Button
         android:id="@+id/pro"

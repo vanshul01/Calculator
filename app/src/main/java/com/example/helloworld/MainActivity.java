@@ -15,7 +15,9 @@ public class MainActivity extends AppCompatActivity {
     Button sub;
     Button divide;
     Button pro;
+    Button love;
     EditText num1;
+    EditText num3;
     EditText num2;
     TextView ans;
 
@@ -26,10 +28,12 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.calc);
         add = findViewById(R.id.add);
         sub = findViewById(R.id.sub);
+        love =findViewById(R.id.money);
         divide = findViewById(R.id.div);
         pro = findViewById(R.id.pro);
         num1 = findViewById(R.id.num1);
         num2 = findViewById(R.id.num2);
+        num3 = findViewById(R.id.num3);
         ans = findViewById(R.id.ans);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +51,19 @@ public class MainActivity extends AppCompatActivity {
                 float numa=Float.parseFloat((num1.getText().toString()));
                 float numb=Float.parseFloat(num2.getText().toString());
                 float result = numa-numb;
+                ans.setText(String.valueOf(result));
+
+            }
+        });
+        love.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                float numa=Float.parseFloat((num1.getText().toString()));
+                float numb=Float.parseFloat(num2.getText().toString());
+                float numc=Float.parseFloat(num3.getText().toString());
+                float temp=numa*numb;
+                float temp1=temp/30;
+                float result = temp1*numc;
                 ans.setText(String.valueOf(result));
 
             }
